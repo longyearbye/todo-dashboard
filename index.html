@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blocks">
+<div class="header">
+        <div class="container">
+        <div class= "time">
+            <p>TODAY IS <span id="time"></span></p>
+        </div>
+        <div id="midsummer">
+        <p>MIDSUMMMER</p>
+        <span id="summer"></span>
+        </div>
+        <div class="persei">
+        <p>PERSEID METEOR SHOWER</p>
+        <span id="perseid"></span>
+        </div>
+        </div>
+</div>
+<div class="main">
+    <div class="notes">
+        <textarea id="note" type="text" placeholder="note..." rows="2" cols="70"></textarea>
+        <button onclick="addNote()">note</button>
+    </div>
+    <div class="notespace">
+    </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
