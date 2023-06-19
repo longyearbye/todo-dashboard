@@ -50,30 +50,6 @@ let x = setInterval(function () {
   }
 }, 1000);
 
-
-let countDate = new Date("Jun 22, 2023 00:00:00").getTime();
-let y = setInterval(function () {
-  let no = new Date().getTime();
-  let distanc = countDate - no;
-
-  let day = Math.floor(distanc / (1000 * 60 * 60 * 24));
-  let hour = Math.floor(
-    (distanc % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  let minute = Math.floor((distanc % (1000 * 60 * 60)) / (1000 * 60));
-  let second = Math.floor((distanc % (1000 * 60)) / 1000);
-
-  document.getElementById("summer").innerHTML =
-    day + "d " + hour + "h " + minute + "m " + second + "s ";
-
-  if (distanc < 0) {
-    clearInterval(x);
-    document.getElementById("summer").innerHTML =
-      "IT'S THE MIDSUMMER!";
-  }
-}, 1000);
-
-
 //notes 
 const noteSpace = document.getElementsByClassName('notespace')[0]; 
 const createBox = document.getElementsByClassName('notes') [0];
