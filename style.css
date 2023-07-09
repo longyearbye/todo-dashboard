@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Caveat&family=Josefin+Sans:wght@200;400&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body{
     min-height: 100vh; /* 100% of the viewport */
     background-position: center;
     padding: 10px 8%;
-    background-image: url(nature.jpg); background-size: cover;
+    background-image: url(R.jpg); background-size: cover;
 }
 
 
@@ -28,7 +28,7 @@ body{
 .blocks {
     display: flex;
     gap: 200px;
-    font-family: 'Caveat', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     margin-left: auto;
     margin-right: auto;
   }
