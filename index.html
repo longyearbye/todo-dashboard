@@ -8,27 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="toggle">
+      <input type="checkbox" id="dark" class="input" />
+      <label for="dark" class="label">
+        <div class="circle"></div>
+      </label>
+    </div>
     <div class="blocks">
-<div class="header">
+      <div class="header">
         <div class="container">
-        <div class= "time">
+          <div class="time">
             <p>TODAY IS <span id="time"></span></p>
+          </div>
+          <div class="persei">
+            <p>PERSEID METEOR SHOWER</p>
+            <span id="perseid"></span>
+          </div>
         </div>
-        <div class="persei">
-        <p>PERSEID METEOR SHOWER</p>
-        <span id="perseid"></span>
+      </div>
+      <div class="main">
+        <div class="notes">
+          <textarea
+            id="note"
+            type="text"
+            placeholder="note..."
+            rows="2"
+            cols="70"
+          ></textarea>
+          <button onclick="addNote()">note</button>
         </div>
-        </div>
-</div>
-<div class="main">
-    <div class="notes">
-        <textarea id="note" type="text" placeholder="note..." rows="2" cols="70"></textarea>
-        <button onclick="addNote()">note</button>
+        <div class="notespace"></div>
+      </div>
     </div>
-    <div class="notespace">
-    </div>
-    </div>
-</div>
     <script src="app.js"></script>
 </body>
 </html>
