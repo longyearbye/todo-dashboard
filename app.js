@@ -93,3 +93,25 @@ function addNote() {
   divMaker(contentArray[contentArray.length -1])
   note.value = ''; 
 }
+
+//toggle
+
+const inputEl = document.querySelector(".input");
+
+const bodyEl = document.querySelector("body");
+
+updateBody();
+
+function updateBody() {
+  if (inputEl.checked) {
+    bodyEl.style.backgroundImage = "url('th.jpg')";
+  } else {
+    bodyEl.style.backgroundImage = "url('R.jpg')";
+  }
+}
+
+inputEl.addEventListener("input", () => {
+  updateBody();
+});
+
+
